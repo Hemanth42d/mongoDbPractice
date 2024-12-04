@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+body{
+    background-color: rgb(45, 45, 45);
+}
+
+.mainContainer{
+    padding: 2rem;
+}
+
+.headerh1{
+    margin-bottom: 10px;
+}
+
+.inputName, .inputEmail, .inputImage{
+    padding: 8px;
+    font-size: medium;
+    outline: none;
+    background-color: rgb(72, 71, 71);
+    border: 2px solid rgb(72, 71, 71);
+    color: white;
+}
+
+.submitbtn{
+    padding: 10px;
+    border: none;
+    background-color: rgb(54, 54, 217);
+    font-size: medium;
+    color: white;
+    border-radius: 5px;
+    width: 8rem;
+}
+
+.profileSec{
+    margin-top: 2rem;
+}
+
+.profileSec a, .backHome a{
+    text-decoration: none;
+    color: rgb(54, 54, 217);
+}
+
+.image{
+    height: 30vh;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+}
+
+.user{
+    width: 20%;
+    padding: 0.8rem;
+    background-color: rgb(81, 80, 80);
+    border-radius: 10px;
+}
+
+.details{
+    width: 80%;
+    margin: auto;
+}
+
+.details p{
+    color: rgb(21, 18, 18);
+    margin-top: 10px;
+}
+
+.backHome{
+    margin-bottom: 2rem;
+}
+
+.links{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 7px;
+    justify-content: space-between;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(54, 54, 217);
+}
+
+.noUsers{
+    margin-top: 15px;
+    color: rgb(80, 80, 80);
+    font-size: large;
+}
+
+.changeUserBtn{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    width: 8rem;
+}

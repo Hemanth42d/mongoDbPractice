@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit profile</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <h1 class="headerh1">Update User</h1>
+      </header>
+      <main>
+        <form action="/edit/<%= userToBeEdit._id %>" method="post">
+          <input
+            class="inputName"
+            type="text"
+            value="<%= userToBeEdit.name %>"
+            name="name"
+          />
+          <input
+            class="inputEmail"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            value="<%= userToBeEdit.email %>"
+          />
+          <input
+            class="inputImage"
+            type="text"
+            placeholder="Enter image url"
+            name="image"
+            value="<%= userToBeEdit.image %>"
+          />
+          <input class="changeUserBtn" type="submit" value="Change User" />
+        </form>
+        <div class="profileSec">
+          <a href="/profiles">Go to profiles</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

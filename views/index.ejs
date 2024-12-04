@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social media</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <h1 class="headerh1">Create User</h1>
+      </header>
+      <main>
+        <form action="/create" method="post">
+          <input
+            class="inputName"
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+          />
+          <input
+            class="inputEmail"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+          />
+          <input
+            class="inputImage"
+            type="text"
+            placeholder="Enter image url"
+            name="image"
+          />
+          <input class="submitbtn" type="submit" value="Create User" />
+        </form>
+
+        <div class="profileSec">
+          <a href="/profiles">Go to profiles</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

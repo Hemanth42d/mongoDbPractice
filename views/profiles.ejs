@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profiles</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <div class="backHome">
+          <a href="/">Go to Home</a>
+        </div>
+        <h1 class="headerh1">All User</h1>
+      </header>
+      <main>
+        <% if(users.length > 0) { %>
+        <div class="users">
+          <% users.forEach((user) => { %>
+          <div class="user">
+            <div class="image">
+              <img src="<%= user.image %>" alt="image" />
+            </div>
+            <div class="details">
+              <h2><%= user.name %></h2>
+              <p><%= user.email %></p>
+            </div>
+            <div class="links">
+              <a href="/edit/<%= user._id %>">Edit</a>
+              <a href="/delete/<%= user._id %>">Delete</a>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+        <% } else { %>
+        <p class="noUsers">No users Yet</p>
+        <% }%>
+      </main>
+    </div>
+  </body>
+</html>
